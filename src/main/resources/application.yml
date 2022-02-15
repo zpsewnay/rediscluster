@@ -1,0 +1,12 @@
+server:
+  port: 9080
+spring:
+  redis:
+    cluster:
+      nodes: 192.168.100.211:6379,192.168.100.212:6379,192.168.100.213:6379,192.168.100.214:6379,192.168.100.215:6379,192.168.100.216:6379
+      max-redirects: 3
+    lettuce:
+      pool:
+        max-idle: 16
+        max-active: 32
+        min-idle: 8
